@@ -15,11 +15,10 @@
             baseDir: './'
          }     
     })
+    style();
     gulp.watch('./scss/**/*.scss', style);
  }
  
  
  exports.style = style;
  exports.watch = watch;
-
-
