@@ -1,13 +1,17 @@
-@import 'normalize.scss'
+
 
 //=== Mixins ===
 @mixin font-lato {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;    
 }
 
 @mixin font-montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 //=== / Mixins ===
-//C
- 
+
+@import 'normalize.scss';
+
+body{
+    background-image: url(https://sun9-21.userapi.com/McJyahwatYimMHXeAvMiHAPC6Q_uSA4azZnN9A/2wX26dFS25U.jpg);
+}
