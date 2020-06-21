@@ -44,6 +44,35 @@ body{
     }
 }
 
+@mixin start-button {
+    @include font-montserrat;
+
+    margin: 0;
+    padding: 16px 20px;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(to right, #FE985B, #FE4FA7);
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.btn-main {
+    @include start-button;
+    border: none;
+    background: linear-gradient(to right, #FE985B, #FE4FA7);
+    color: white;
+}
+
+.btn-seconddary {
+    @include start-button;
+    border: 1px solid #414141;ß
+    background: white;
+    color: #414141;
+}
+
 //=== header ===
 .section-header {
     color: #ffffff;
@@ -122,19 +151,6 @@ body{
                     }
                 }
             }
-            &-button{
-                button{
-                    @include font-montserrat;
-                    margin: 0;
-                    padding: 16px 20px;
-                    font-size: 18px;
-                    border: none;
-                    background: linear-gradient(to right, #FE985B, #FE4FA7);
-                    outline: none;
-                    border-radius: 4px;
-                    color: white;
-                }
-            }
         }
     }
 }
@@ -170,6 +186,7 @@ body{
         img {
             width: 100%;
             height: auto ;
+            cursor: pointer;
         }
     }
 }
@@ -230,11 +247,7 @@ body{
 .section-plans {
     padding-top: 120px;
     padding-bottom: 120px;
-
-    &_title,
-    &_subtitle {
-        text-align: center;
-    }
+    text-align: center;
 
     &_title {
         font-size: 36px;
@@ -246,7 +259,8 @@ body{
         font-size: 16px;
         line-height: 28px;
         font-weight: 300;
-        margin-bottom: 110px;
+        width: 50%;
+        margin: 0 auto 80px;
     }
     &_list {
         display: flex;
@@ -285,7 +299,7 @@ body{
                 font-weight: 300;
                 margin-bottom: 40px;
             }
-            &_button {}
+           
 
             &.active {
                 background-color: #f6fafd;
@@ -294,4 +308,5 @@ body{
 
     }
 }
+//===  / plans ===
 
