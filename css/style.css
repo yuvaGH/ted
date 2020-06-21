@@ -314,6 +314,21 @@ body {
   width: 1180px;
   margin: 0 auto; }
 
+.discription-item_icon {
+  margin-bottom: 20px; }
+
+.discription-item_title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold; }
+
+.discription-item_text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #6c6c6c; }
+
 .section-header {
   color: #ffffff;
   background: url(../img/gulpfile.png) no-repeat 50% 50%;
@@ -402,17 +417,8 @@ body {
       line-height: 51px;
       font-weight: bold;
       margin-bottom: 56px; }
-    .section-promo-1_content .subtitle {
-      font-size: 18px;
-      line-height: 22px;
-      font-weight: bold;
-      margin-top: 30px; }
-    .section-promo-1_content .text {
-      font-size: 16px;
-      line-height: 27px;
-      font-weight: 300;
-      color: #6c6c6c;
-      margin-top: 14px; }
+    .section-promo-1_content .discription-item {
+      margin-top: 28px; }
   .section-promo-1_video img {
     width: 100%;
     height: auto; }
@@ -421,8 +427,74 @@ body {
   display: flex;
   padding-top: 86px;
   margin-top: 120px;
-  border-top: 1px solid #e2e2e2; }
-  .section-promo-2_item .icon {
-    margin-bottom: 20px; }
-  .section-promo-2_item .title {
-    margin-bottom: 14px; }
+  border-top: 1px solid #e2e2e2;
+  text-align: center; }
+  .section-promo-2 .discription-item + .discription-item {
+    margin-left: 40px; }
+
+.section-founder {
+  background-color: #f5fafd;
+  padding-top: 34px; }
+  .section-founder .section-inner {
+    display: flex; }
+  .section-founder_img {
+    align-self: flex-end; }
+  .section-founder_content {
+    align-self: center;
+    padding-left: 50px; }
+  .section-founder_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 40px; }
+  .section-founder_name {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold; }
+  .section-founder_post {
+    font-size: 20px;
+    line-height: 29px; }
+
+.section-plans {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .section-plans_title, .section-plans_subtitle {
+    text-align: center; }
+  .section-plans_title {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: bold; }
+  .section-plans_subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 110px; }
+  .section-plans_list {
+    display: flex;
+    justify-content: center; }
+    .section-plans_list-item {
+      flex-basis: 370px;
+      padding: 60px 45px; }
+      .section-plans_list-item_title {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 26px; }
+      .section-plans_list-item_price {
+        margin-bottom: 26px; }
+        .section-plans_list-item_price .prefix {
+          color: #FE4FA7;
+          font-size: 72px;
+          line-height: 86px;
+          font-weight: bold; }
+        .section-plans_list-item_price .postfix {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold; }
+      .section-plans_list-item_description {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        margin-bottom: 40px; }
+      .section-plans_list-item.active {
+        background-color: #f6fafd; }
